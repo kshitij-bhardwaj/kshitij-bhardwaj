@@ -1,4 +1,3 @@
-### Hi there 👋
 
 <!--
 **kshitij-bhardwaj/kshitij-bhardwaj** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -13,5 +12,5 @@ Here are some ideas to get you started:
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I belong to the land of Shakuntala Devi - The Human Computer
 
-###Check out some of my Repositories down below ✨
+### Check out some of my Repositories down below ✨
 
