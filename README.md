@@ -18,11 +18,11 @@ I'm Kshitij Bhardwaj, a person with mixed goals to achieve and several aspiratio
 - 💡 I’m currently ***learning*** **React-Native, React.js, Next.js, Typescript, Golang**
 - 💬 Ask me about **Developing, Designing and Physics!**
 - 🏀 My ***design portfolio:*** 
-  - **Dribbble** (https://dribbble.com/Tensor1729), 
+  - **Dribbble** (https://dribbble.com/Kshitij_Bhardwaj), 
   - **Fiverr** (https://www.fiverr.com/tensor1729?up_rollout=true) 
 - 📫 How to reach me: 
-  - **Discord** (Toshiro#8976), 
   - **Instagram** (https://www.instagram.com/kshitijbhardwaj1729/)
+  - **Discord** (Toshiro#8976),  
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I belong to the land of **Shakuntala Devi - The Human Computer**
 
