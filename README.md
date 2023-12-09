@@ -14,20 +14,17 @@ I'm Kshitij Bhardwaj, a person with mixed goals to achieve and several aspiratio
 
 <br>
 
-- 💡 I’m currently ***learning*** **React-Native, React.js, Next.js, Typescript, Golang**
+- 💡 I’m currently ***learning*** **Machine Learning Algorithms in Python, Image Processing**
 - 💬 Ask me about **Developing, Designing and Physics!**
 - 🏀 My ***design portfolio:*** 
   - **Dribbble** (https://dribbble.com/Kshitij_Bhardwaj), 
   - **Fiverr** (https://www.fiverr.com/tensor1729?up_rollout=true) 
 - 📫 How to reach me: 
-  - **Telegram** (@Tensor1729)
-  - **Discord** (Toshiro#8976),  
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: I belong to the land of **Shakuntala Devi - The Human Computer**
+  - **Telegram** (@tensor.1729)
+  - **Discord** (Tensor#8976),  
+
 
 <br>
-
-If you have come this far reading this, I would love to connect!
 
 ### Check out some of my Repositories down below ✨
 
