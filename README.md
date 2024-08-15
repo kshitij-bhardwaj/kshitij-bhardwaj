@@ -10,17 +10,20 @@ Here are some ideas to get you started:
 
 <br>
 
-I'm Kshitij Bhardwaj, a person with mixed goals to achieve and several aspirations to fulfill. I love designing and developing open-source websites and applications and give my best into it. At the same time, my love for Physics and Mathematics is something that attracts me and keep me engaged for uncountable hours. But I get through and balance out both sides, maintaining appropriate pace and enjoying satisfaction from sides. I love to learn and collaborate with people better experienced. I believe that anything is possible with enough determination and practice and try to live upto this everyday!
+My academic interests converge at the intersection of computer science and physical sciences. I am particularly drawn to the application of machine learning, specifically TensorFlow, in domains such as astrophysics. My goal is to leverage these tools to extract meaningful insights from complex datasets. Additionally, I have a strong foundation in graphic design, allowing me to effectively communicate technical information visually. 
+
+I am excited about the potential synergies between mechanical engineering and machine learning. I believe that by combining these disciplines, we can develop innovative solutions to complex engineering challenges. 
+
 
 <br>
 
 - 💡 I’m currently ***learning*** **Machine Learning Algorithms in Python, Image Processing**
-- 💬 Ask me about **Developing, Designing and Physics!**
+- 🧑🏼‍🎓 Personal Website **https://home.iitk.ac.in/~kshitijb23/**
 - 🏀 My ***design portfolio:*** 
   - **Dribbble** (https://dribbble.com/Kshitij_Bhardwaj), 
-  - **Fiverr** (https://www.fiverr.com/tensor1729?up_rollout=true) 
+  - **Behance** (https://www.behance.net/kshitijbhardwaj) 
 - 📫 How to reach me: 
-  - **Telegram** (@tensor.1729)
+  - **Telegram** (@Tensor1729)
   - **Discord** (Tensor#8976),  
 
 
