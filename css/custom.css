@@ -1,0 +1,169 @@
+.nav-pole-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.pole-label {
+  position: absolute;
+  left: 10px; /* bring text closer to the pole */
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 2rem; /* increase text size */
+  color: #222;
+  background: none;
+  padding: 2px 12px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.25s, color 0.25s, left 0.25s, font-size 0.25s;
+  z-index: 10;
+}
+
+.nav-pole-item:hover .pole-label,
+.nav-pole-item.active .pole-label {
+  opacity: 1;
+  pointer-events: auto;
+  color: #ffffff; /* or #222 for black */
+} /* <-- This bracket was missing */
+
+.side.pole.left .navigation ul li .pole-label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  padding: 2px 12px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.25s, color 0.25s;
+  z-index: 10;
+}
+
+.side.pole.left .navigation ul li.selected .pole-label,
+.side.pole.left .navigation ul li:hover .pole-label {
+  opacity: 1 !important;
+  pointer-events: auto;
+  color: #fff;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.92);
+  border-radius: 1.2em;
+  box-shadow: 0 2px 16px 0 rgba(32,44,55,0.07);
+  min-width: 320px;
+  max-width: 340px;
+  flex: 0 0 320px;
+  padding: 0; /* Remove padding so image can touch edges */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform 0.18s, box-shadow 0.18s;
+  overflow: hidden; /* Prevent expansion outside card */
+  position: relative;
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  height: 180px; /* or use aspect-ratio: 16/9; for modern browsers */
+  object-fit: cover;
+  border-radius: 0; /* Remove border radius for flush edges */
+  margin: 0; /* Remove margin */
+}
+
+.project-card h3, .project-card p, .project-card > div:not(:first-child) {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* Reduce distance between graphic and project title, and justify text */
+.project-card h3 {
+  margin: 0.25em 0 0.5em 0; /* less space above and below */
+  font-size: 1.18em;
+  font-weight: 700;
+  color: #202c37;
+  text-align: center;
+}
+
+.project-card .subtitle {
+  font-size: 0.7em;
+  color: #888;
+  opacity: 0.65;
+  margin: 0 0 0.5em 0;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.project-card p {
+  font-size: 0.98em;
+  color: #444;
+  margin: 0 0 1em 0;
+  text-align: justify;
+}
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 32px 0 rgba(0,123,255,0.13);
+  z-index: 2;
+}
+
+.scrolling-projects-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: visible; /* allow cards to expand outside vertically */
+  padding-bottom: 1.5em;
+  margin-top: 2em;
+  position: relative;
+  /* Add horizontal padding so first/last card can expand */
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 1;
+}
+
+.scrolling-projects {
+  display: flex;
+  flex-direction: row;
+  gap: 2.2em;
+  min-width: 700px;
+  padding-bottom: 0.5em;
+  overflow: visible; /* allow cards to expand outside horizontally */
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure all parent containers allow overflow for scaling cards */
+.slide .content,
+.slide .container,
+.slide .wrap,
+.fix-12-12 {
+  overflow: visible !important;
+}
+
+.project-card img,
+.button.rounded img,
+.button.empty img,
+img.wide {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  display: block !important;
+  max-width: 100% !important;
+  max-height: none !important;
+}
+
+.slide[data-slide="slide4"] .content {
+  overflow-y: auto !important;
+  height: 100vh !important;
+}

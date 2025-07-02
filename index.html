@@ -10,7 +10,7 @@
 
 	<!-- Compressed Styles -->
 	<link href="css/slides.min.css?41331" rel="stylesheet" type="text/css">
-
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
 	<!-- Custom Styles -->
 	<!-- <link href="css/custom.css" rel="stylesheet" type="text/css"> -->
 
@@ -24,8 +24,13 @@
 	<!-- <script src="js/custom.js" type="text/javascript"></script> -->
 
 	<!-- Fonts and Material Icons -->
-	<link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/>
- 
+	<!-- <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"/> -->
+ <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400&display=swap" rel="stylesheet" as="font"/>
+ <style>
+    body, html {
+      font-family: 'Tomorrow', sans-serif !important;
+    }
+  </style>
 </head>
 <body class="slides chain simplifiedMobile animated">
 		
@@ -104,146 +109,266 @@
 </svg>
 
 <!-- Navigation -->
-<nav class="side pole">
+<!-- <nav class="side pole left">
   <div class="navigation">
     <ul></ul>
+  </div>
+</nav> -->
+
+<nav class="side pole left">
+  <div class="navigation">
+    <ul>
+      <li class="nav-pole-item active" data-target="slide1"><span class="pole-label">Home</span></li>
+      <li class="nav-pole-item" data-target="slide2"><span class="pole-label">Intro</span></li>
+      <li class="nav-pole-item" data-target="slide3"><span class="pole-label">Projects</span></li>
+      <li class="nav-pole-item" data-target="slide4"><span class="pole-label">Design</span></li>
+      <li class="nav-pole-item" data-target="slide5"><span class="pole-label">Contact</span></li>
+    </ul>
   </div>
 </nav>
 
 <!-- Slide 1 (#10) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" data-slide="slide1">
   <div class="content">
+    <!-- Add this just after <body> and before your main content -->
     <div class="container">
       <div class="wrap">
       
         <div class="fix-7-12">
-          <h1 class="ae-1">You've Reached Kshitij Bhardwaj's Homepage</h1>
-          <p class="ae-2"><span class="opacity-8">But First, Coffee...</span></p>
+          <h1 class="ae-1" style="font-family: 'Tomorrow', sans-serif; position: relative; display: inline-block;">
+            You've Reached 
+            <a 
+              href="https://drive.google.com/file/d/1zevjKaUcto-qjqcyObVZJgvQVcTz7rkY/view?usp=sharing" 
+              target="_blank" 
+              style="color: #202c37; font-weight: bold; position: relative; padding-right: 0em;"
+              title="View Resume (opens in new tab)"
+            >
+              Kshitij Bhardwaj </a>'s Homepage
+          </h1>
+          <p class="ae-2" style="font-family: 'Tomorrow', sans-serif;"><span class="opacity-8">But First, Coffee...</span></p>
+
+          
         </div>  
         
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/Back1.jpeg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/Back1.jpg); opacity: 1;"></div>
 </section>
 <!-- Slide 2 (#74) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" data-slide="slide2">
   <div class="content">
     <div class="container">
       <div class="wrap">
-      
         <div class="fix-10-12 toCenter">
-          <h1 class="ae-1">Engineering & Beyond: My Skills & Activities</h1>
-          <p class="ae-2"><span class="opacity-8">Done with 2 semesters out of 8 (8 right?)</span></p>
+          <h1 class="ae-1">Engineering, Coding & Campus Life</h1>
+          <p class="ae-2"><span class="opacity-8">A snapshot of my skills, academics, and activities at IIT Kanpur</span></p>
         </div>
         <div class="fix-12-12">  
           <ul class="grid grid-74 later equal margin-top-5">
+            <!-- Academics -->
             <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-3 fromCenter">
-              <a href="#" class="box-74">
+              <div class="box-74">
                 <div class="thumbnail-74">
-                  <img src="assets/img/mech.png" class="wide" alt="Thumbnail"/>
+                  <img src="assets/img/mech.png" class="wide" alt="Mechanical Engineering"/>
                 </div>
                 <div class="name-74 equalElement table wide">
                   <div class="cell left top">
-                    <h3 class="">Major</h3>
-                    <p class="tiny opacity-6 cropBottom">B.Tech in Mechanical Engineering</p>
-                    <h3 class=""></h3>
-                    <p class="tiny opacity-6 cropBottom"></p>
+                    <h3 style="font-weight:500;">Major</h3>
+                    <p class="tiny opacity-6 cropBottom">B.Tech <br>Mechanical Engineering<br>IIT Kanpur<br>CGPA: 8.0/10 (after 4 semesters)</p>
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
+            <!-- Programming & ML -->
             <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-4 fromCenter">
-              <a href="#" class="box-74">
+              <div class="box-74">
                 <div class="thumbnail-74">
-                  <img src="assets/img/courses.png" class="wide" alt="Thumbnail"/>
+                  <img src="assets/img/courses.png" class="wide" alt="Programming"/>
                 </div>
                 <div class="name-74 equalElement table wide">
                   <div class="cell left top">
-                    <h3 class="">Courses</h3>
-                    <p class="tiny opacity-6 cropBottom">Big Data Analysis through Copula under Prof. Jong-Min Kim (University of Minnesota-Morris)</p>
+                    <h3>Programming & ML</h3>
+                    <p class="tiny opacity-6 cropBottom">
+                      Intro to ML (CS771)<br>
+                      Deep Learning and Computer Vision (EE655)<br>
+                      Big Data Analysis (Copula, U of Minnesota-Morris)<br>
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
+            <!-- Leadership & Clubs -->
             <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromCenter">
-              <a href="#" class="box-74">
+              <div class="box-74">
                 <div class="thumbnail-74">
-                  <img src="assets/img/por.jpg" class="wide" alt="Thumbnail"/>
+                  <img src="assets/img/por.jpg" class="wide" alt="Leadership"/>
                 </div>
                 <div class="name-74 equalElement table wide">
                   <div class="cell left top">
-                    <h3 class="">Position Of Responsibility</h3>
-                    <ul class="tiny opacity-6 cropBottom">
-                      <li>Secretary @ Electronics Club</li>
-                      <li>Student Guide @ Counselling Service IITK</li>
-                
-                    </ul>
+                    <h3>Leadership & Clubs</h3>
+                    <p class="tiny opacity-6 cropBottom">
+                      Coordinator, Electronics Club<br>
+                      Secretary, Prakriti, CWC IITK<br>
+                      Student Guide, Counselling Service<br>
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-5 fromCenter">
-              <a href="#" class="box-74">
+            <!-- Design & Interests -->
+            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-6 fromCenter">
+              <div class="box-74">
                 <div class="thumbnail-74">
-                  <img src="assets/img/interests.jpg" class="wide" alt="Thumbnail"/>
+                  <img src="assets/img/interests.jpg" class="wide" alt="Design & Interests"/>
                 </div>
                 <div class="name-74 equalElement table wide">
                   <div class="cell left top">
-                    <h3 class="">Interests</h3>
-                    <p class="tiny opacity-6 cropBottom">Secretary @ Design and Animation Club, IIT Kanpur</p>
+                    <h3>Extra-Currics</h3>
+                    <p class="tiny opacity-6 cropBottom">
+                      Gold Award, IFP Poster and Cover Art 2024<br>
+                      Interests: UI/UX, Branding, Graphic Design and<br>
+                       Web Development
+
                   </div>
                 </div>
-              </a>
+              </div>
             </li>
           </ul>
         </div>
-                
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/Back2.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/img-75.jpg)"></div>
 </section>
 
 <!-- Slide 3 (#90) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" data-slide="slide3">
   <div class="content">
     <div class="container">
       <div class="wrap">
 
         <div class="fix-10-12 toCenter">
-          <p class="margin-bottom-2 ae-1"><span class="opacity-6">In the past 1 year</span></p>
+          <p class="margin-bottom-2 ae-1"><span class="opacity-6">In the past 2 years</span></p>
+          <!-- <h6 class="ae-1" style="margin-top: 0;"><span class="opacity-6">(Click on the image to See More)</span></h6> -->
           <h1 class="ae-1">Challenge Accepted: Showcasing My Projects </h1>
         </div>
         <div class="fix-12-12 margin-top-3">
-          <ul class="flex fixedSpaces later left">
-            <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
-              <div class="button rounded empty margin-bottom-2 videoThumbnail noShadow popupTrigger ae-3" data-popup-id="90-2"><img class="wide" src="assets/img/chakra.jpeg" alt="Video Thumbnail"/></div>
+         <div class="scrolling-projects-container">
+          <div class="scrolling-projects">
+            <!-- Project 1 -->
+            
+            <div class="project-card">
+            
+              <div class="button rounded empty margin-bottom-2 noShadow popupTrigger ae-3">
+                <img class="wide" src="assets/img/cricket.jpg" alt="Image Thumbnail"/>
+              </div>
+            
+            <a href="https://drive.google.com/file/d/1A0U93PhIyi7ZT-qPUMreAUZ4zcm9cTEG/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <h3 class="ae-4">MLOps Fantasy Cricket Team</h3>
+              
+              <div class="subtitle ae-5">FIFS Gameathon | Tech Meet 13.0</div>
+              <div class="ae-5">
+                <p class="tiny opacity-6">Engineered an MLOps pipeline for Dream11 fantasy cricket team player selection and optimization using weather, pitch, and sentiment signals—ranked 8th nationally in India’s biggest fantasy sports data challenge.</p>
+              </div>
+            </a>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+            
+              <div class="button rounded empty margin-bottom-2 noShadow popupTrigger ae-3">
+                <img class="wide" src="assets/img/ghibli.jpg" alt="Image Thumbnail"/>
+              </div>
+            
+              <a href="https://github.com/kshitij-bhardwaj/MultiStyleGANs" target="_blank" rel="noopener noreferrer">
+              <h3 class="ae-4">Multi-Style GANs</h3>
+            
+              <div class="subtitle ae-5">EE655 Course Project</div>
+              <div class="ae-5">
+                <p class="tiny opacity-6">Designed a custom CycleGAN for Ghibli-style face translation with Custom Stable Diffusion generated dataset and Ageing-Deaging translation with DeepFace preprocessing, SE-ResNet, and PatchGANs—trained on Stable Diffusion–generated datasets.</p>
+              </div>
+              </a>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+              
+              <div class="button rounded empty margin-bottom-2 noShadow popupTrigger ae-3">
+                <img class="wide" src="assets/img/ksham.jpg" alt="Image Thumbnail"/>
+              </div>
+              <a href="https://github.com/kshitij-bhardwaj/Looking-To-Listen/tree/KB-LTL" target="_blank" rel="noopener noreferrer">
+              <h3 class="ae-4">Looking to Listen</h3>
+              
+              <div class="subtitle ae-5">Ksham Innovations | Startup</div>
+              <div class="ae-5">
+                <p class="tiny opacity-6">Rebuilt and retrained Google’s LTL pipeline using TensorFlow and CUDA to isolate voices in multi-speaker videos, achieving +1.59 dB SDR gain and 70% AV accuracy—enabling smarter assistive tech for real-world noisy environments.</p>
+              </div>
+              </a>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+              <div class="button rounded empty margin-bottom-2 noShadow popupTrigger ae-3">
+                <img class="wide" src="assets/img/enigma.jpg" alt="Image Thumbnail"/>
+              </div>
+                            <a href="https://github.com/ElectronicsClub-IITK/ENIGMA" target="_blank" rel="noopener noreferrer"></a>
+              <h3 class="ae-4">ENIGMA</h3>
+              <div class="subtitle ae-5">Electronics Club | Project Mentor</div>
+              <div class="ae-5">
+                <p class="tiny opacity-6">Led a 20-member team to build a real-time rotor-based cryptographic system on Arduino Nano with GUI, TFT display, and multitasking via Protothreads—bridging classical cryptography and embedded systems.</p>
+              </div>
+              </a>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+              <div class="button rounded empty margin-bottom-2 videoThumbnail noShadow popupTrigger ae-3" data-popup-id="90-2">
+                <img class="wide" src="assets/img/chakra.jpeg" alt="Video Thumbnail"/>
+              </div>
               <h3 class="ae-4">Chakravyuh</h3>
-              <div class="ae-5"><p class="tiny opacity-6">A Business-Plan Competition organised by IIT Guwahati. Ranked 7th presenting our work on Deepfake Detection on multi modal Inputs, including Images, Audio, Video and even Live Video</p></div>
-            </li>
-            <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-4"><img class="wide" src="assets/img/crypto.jpeg" alt="Image Thumbnail"/></a>
-              <h3 class="ae-5">CryptoMining</h3>
-              <div class="ae-6"><p class="tiny opacity-6">Organised by Electronics Club, we built a Duino Coin Mining Rig setup based on a combination ESPs and Arduino Nano, hosted on RPi4. Final Hashrate: 1.2 MH/s</p></div>
-            </li>
-            <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-5"><img class="wide" src="assets/img/voice.jpeg" alt="Image Thumbnail"/></a>
+              <div class="subtitle ae-5">Business Plan Competition | IIT Guwahati</div>
+              <div class="ae-5">
+                <p class="tiny opacity-6">A Business-Plan Competition organised by IIT Guwahati. Ranked 7th presenting our work on Deepfake Detection on multi modal Inputs, including Images, Audio, Video and even Live Video</p>
+              </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card">
+              <a href="https://sites.google.com/view/duinocoinminingrig/" class="button rounded empty margin-bottom-2 ae-4">
+                <img class="wide" src="assets/img/crypto.jpeg" alt="Image Thumbnail"/>
+              </a>
+              <h3 class="ae-5">Duino Coin CryptoMining</h3>
+              <div class="subtitle ae-5">Electronics Club | January 2025</div>
+              <div class="ae-6">
+                <p class="tiny opacity-6">Built a distributed crypto-mining setup using DUCO-S1 across 8 microcontrollers from Arduino Uno to Raspberry Pi, achieving 1.34 MH/s on Pi and 342 kH/s on Uno—highlighting hardware efficiency gaps in eco-friendly blockchain mining.</p>
+              </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="project-card">
+              <a href="#" class="button rounded empty margin-bottom-2 ae-5">
+                <img class="wide" src="assets/img/voice.jpeg" alt="Image Thumbnail"/>
+              </a>
               <h3 class="ae-6">Voice Morph Companion</h3>
-              <div class="ae-7"><p class="tiny opacity-6">Summer Project under Electronics Club, deploying an LLM model capable of Audio Input over a IR-Sensor based GUI projected on a Mirror Screen. It's interesting, once complete, I'll explain better.</p></div>
-            </li>
-            <li class="col-3-12 col-tablet-1-2 col-phone-1-1">
-              <a href="#" class="button rounded empty margin-bottom-2 ae-6"><img class="wide" src="assets/img/finance.png" alt="Image Thumbnail"/></a>
+              <div class="subtitle ae-5">Electronics Club | Summer 2024</div>
+              <div class="ae-7">
+                <p class="tiny opacity-6">Built an offline voice assistant on Raspberry Pi + Arduino Nano BLE using Edge Impulse, VOSK ASR, and custom wake-word detection—designed for low-latency Indian English interactions.</p>
+              </div>
+            </div>
+            <!-- Project 8 -->
+            <div class="project-card">
+              <a href="#" class="button rounded empty margin-bottom-2 ae-6">
+                <img class="wide" src="assets/img/finance.png" alt="Image Thumbnail"/>
+              </a>
               <h3 class="ae-7">Financial Forecasting</h3>
-              <div class="ae-8"><p class="tiny opacity-6">Under the GDSC Winter Project, we were taught applications of a Time Series Model to predict future trends of stock prices. Honestly, a little meh, couldn't produce a satisfactory output, but watched lots of lectures</p></div>
-            </li>
-          </ul>
+              <div class="ae-8">
+                <p class="tiny opacity-6">Under the GDSC Winter Project, we were taught applications of a Time Series Model to predict future trends of stock prices. Honestly, a little meh, couldn't produce a satisfactory output, but watched lots of lectures</p>
+              </div>
+            </div>
+            <!-- Add more .project-card blocks as needed -->
+          </div>
+        </div>
         </div>
 
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/Back3.jpeg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/Back3.jpg)"></div>
 </section>
 
 <!-- Popup Video -->
@@ -263,7 +388,7 @@
 </div>
 
 <!-- Slide 4 (#75) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" data-slide="slide4">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -272,35 +397,35 @@
           <h1 class="ae-1">Design : Travel in Time</h1>
           <p class="ae-2"><span class="opacity-8">Design is a form of com­pet­it­ive advant­age. People tend to think of design as good art, good visual lan­guage, which it abso­lutely has to be.</span></p>
         </div>
-        <div class="fix-12-12">
+        <div class="design-gallery-scroll">
           <ul class="grid grid-75 masonry fixedSpaces ae-3 controller popupTrigger" data-popup-id="75-1" data-slider-id="75-1">
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-4 fadeIn">
-              <img src="assets/img/studycase.jpeg" class="wide rounded margin-bottom-1" alt="Image"/>
+              <img src="assets/img/studycase.jpeg" class="rounded margin-bottom-1" alt="Image"/>
             </li>
             
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-3 fadeIn">
-              <img src="assets/img/psych.png" class="wide rounded margin-bottom-1" alt="Image" height="372"/>
+              <img src="assets/img/psych.png" class="rounded margin-bottom-1" alt="Image" height="372"/>
             </li>
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-2 fadeIn">
-              <img src="assets/img/TRUMP.jpg" class="wide rounded margin-bottom-1" alt="Image"/>
+              <img src="assets/img/TRUMP.jpg" class="rounded margin-bottom-1" alt="Image"/>
             </li>
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-7 fadeIn">
-              <img src="assets/img/Fankle.png" class="wide rounded margin-bottom-1" alt="Image" height="150"/>
+              <img src="assets/img/Fankle.png" class=" rounded margin-bottom-1" alt="Image" height="150"/>
             </li>
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-9 fadeIn">
-              <img src="assets/img/WITCH.jpg" class="wide rounded margin-bottom-1" alt="Image" height = '160'/>
+              <img src="assets/img/WITCH.jpg" class=" rounded margin-bottom-1" alt="Image" height = '160'/>
             </li>
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-6 fadeIn">
-              <img src="assets/img/BradPitt.jpg" class="wide rounded margin-bottom-1" alt="Image"/>
+              <img src="assets/img/BradPitt.jpg" class=" rounded margin-bottom-1" alt="Image"/>
             </li>
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-5 fadeIn">
-              <img src="assets/img/heart.jpg" class="wide rounded margin-bottom-1" alt="Image" height="270"/>
+              <img src="assets/img/heart.jpg" class=" rounded margin-bottom-1" alt="Image" height="270"/>
             </li>
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-10 fadeIn">
-              <img src="assets/img/Marble.jpg" class="wide rounded margin-bottom-1" alt="Image" height="222"/>
+              <img src="assets/img/Marble.jpg" class=" rounded margin-bottom-1" alt="Image" height="222"/>
             </li>
             <li class="col-3-12 col-tablet-1-3 col-phablet-1-2 col-phone-1-1 ae-11 fadeIn">
-              <video height="222" class="wide rounded margin-bottom-1" alt="Video" controls>
+              <video height="222" class=" rounded margin-bottom-1" alt="Video" controls>
                 <source src="assets/img/stopmotion.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video>
@@ -357,7 +482,7 @@
 
 
 <!-- Slide 5 (#57) -->
-<section class="slide fade-6 kenBurns">
+<section class="slide fade-6 kenBurns" data-slide="slide5">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -394,7 +519,7 @@
       </div>
     </div>
   </div>
-  <div class="background" style="background-image:url(assets/img/background/img-56.jpg)"></div>
+  <div class="background" style="background-image:url(assets/img/background/Back2.jpg)"></div>
 </section>
 
 <!-- Panel Bottom #13 -->
@@ -413,6 +538,31 @@
 
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>
-		
+<script>
+function addPoleLabels() {
+  // Define your labels in order of slides (excluding .exclude slides)
+  var labels = ['Home', 'Intro', 'Projects', 'Design', 'Contact'];
+  var navItems = document.querySelectorAll('.side.pole.left .navigation ul li');
+  navItems.forEach(function(item, idx) {
+    // Remove any existing label
+    var oldLabel = item.querySelector('.pole-label');
+    if (oldLabel) oldLabel.remove();
+    // Add new label if in range
+    if (labels[idx]) {
+      var span = document.createElement('span');
+      span.className = 'pole-label';
+      span.textContent = labels[idx];
+      item.style.position = 'relative';
+      item.appendChild(span);
+    }
+  });
+}
+
+// Run on DOM ready and after every slide/nav update
+document.addEventListener('DOMContentLoaded', addPoleLabels);
+window.addEventListener('resize', addPoleLabels);
+window.addEventListener('slideChange', addPoleLabels); // Slides triggers this event
+</script>
+
 </body>
 </html>

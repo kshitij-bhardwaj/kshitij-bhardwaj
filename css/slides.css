@@ -692,13 +692,21 @@ small .small {
     margin-left: 16px;
   }
 }
-.button.empty {
+.project-card img,
+.button.rounded img,
+.button.empty img {
+  width: 100%;
+  height: 180px;
   padding: 0 !important;
   background-color: transparent !important;
   font-size: 0 !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
   margin: 0;
   box-shadow: none;
 }
+
 .button.hollow {
   padding: 0 !important;
   background-color: transparent !important;
@@ -12847,5 +12855,4 @@ span.next-arrow svg {
   clear: both;
   display: table;
 }
-
 /*# sourceMappingURL=slides.css.map */
