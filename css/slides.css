@@ -1333,7 +1333,7 @@ p.uppercase, .p.uppercase,
 
 /* Background Fade */
 .fade .content {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0);
 }
 
 /*default*/
@@ -1342,7 +1342,7 @@ p.uppercase, .p.uppercase,
 }
 
 .fade-2 .content {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0);
 }
 
 .fade-3 .content {
@@ -1350,7 +1350,7 @@ p.uppercase, .p.uppercase,
 }
 
 .fade-4 .content {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0);
 }
 
 .fade-5 .content {
